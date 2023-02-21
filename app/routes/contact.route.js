@@ -4,9 +4,9 @@ const contacts = require('../controllers/contact.controller');
 const router = express.Router();
 
 router.route('/')
-  .get(contacts.findAll)
-  .post(contacts.create)
-  .delete(contacts.deleteAll);
+  .get(contacts.findAll) //cau 1
+  .post(contacts.create) // cau 2
+  .delete(contacts.deleteAll); // cau 3
 
 
 router.route('/favorite')
